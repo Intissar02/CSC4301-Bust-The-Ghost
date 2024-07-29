@@ -1,70 +1,41 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bust the Ghost Game
+Overview
 
-## Available Scripts
+"Bust the Ghost" is an interactive game that combines probabilistic inference and engaging gameplay mechanics. The objective is to find and capture a ghost hidden in a 9x12 grid using sensor readings and Bayesian inference.
+Objectives and Game Mechanics
 
-In the project directory, you can run:
+  Grid Layout: The ghost is placed randomly in the grid according to a uniform prior distribution.
+    Sensor Readings: Players click on grid cells to receive color-coded feedback:
+        Red: Ghost is in the clicked cell.
+        Orange: Ghost is 1-2 cells away.
+        Yellow: Ghost is 3-4 cells away.
+        Green: Ghost is at least 5 cells away.
+    Gameplay: The game continues until the player locates the ghost or exhausts their credits or bust attempts.
 
-### `npm start`
+Probabilistic Inference
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  Bayesian Inference: The game updates the probability of each cell containing the ghost based on sensor readings using Bayesian methods.
+  Probability Updates: When a sensor reading is received, probabilities are recalculated to reflect the new information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+User Interface
 
-### `npm test`
+ Interactive Components:
+        Grid Display: Click to receive sensor feedback.
+        Peep Toggle Button: Displays current ghost location probabilities.
+        Bust Button: Allows players to guess the ghost's exact location.
+        Score and Bust Attempts: Tracks remaining credits and guesses.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies Used
 
-### `npm run build`
+JavaScript & React: For dynamic and responsive UI development.
+Redux: For efficient state management, ensuring consistent state transitions and strategic gameplay.
+Custom Utility Functions: For Bayesian updates and probabilistic modeling, enhancing decision-making and gameplay dynamics.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Advanced Functionalities
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Integration of a direction sensor providing directional hints, improving the gaming experience by combining distance and directional data for more accurate probability updates.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Conclusion
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"Bust the Ghost" showcases the application of Bayesian inference in gaming, creating a strategic and engaging experience. The use of advanced web development technologies like React and Redux ensures a responsive and interactive UI, while probabilistic modeling adds depth to the gameplay
