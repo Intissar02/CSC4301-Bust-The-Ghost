@@ -1,0 +1,136 @@
+.main {
+  background-image: url('../../features/game/cc2799b1620ea3579020b8572e3212d6.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Use 100vh to occupy the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  padding: 80px; /* Adjust padding as needed */
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items in the top section to the center */
+}
+
+.directionHint {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 30px 0;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #1142f2;
+  border: 2px solid #c0ecc0;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.controls {
+  display: flex;
+  justify-content: center; /* Align controls horizontally centered */
+  gap: 20px; /* Adjust gap between controls */
+  margin-top: 20px; /* Adjust top margin */
+}
+
+.info {
+  text-align: center; /* Align text in info section to the center */
+  color: #152cbd;
+  font-size: 1.5rem;
+}
+
+/* Updated to make Score and Attempts Left white */
+.info > div {
+  color: #ffffff; /* Set text color to white */
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align grid container to the center */
+  margin-top: 50px; /* Adjust margin to move the grid down */
+  width: 70%;
+  margin-left: -1200px; /* Adjust width of grid container */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Align rows to the center */
+  width: 100%;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #092a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.5s;
+  position: relative;
+  background-color: #4018f1;
+}
+
+.probability {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 2px;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background-color: #0b2ede;
+}
+
+.gameOverMessage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #080707;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  transition: all 0.3s ease;
+  background-color: #eb0d0d;
+  text-align: center;
+}
+
+.congratulationsMessage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  background-color: #5714dd;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.button {
+  background-color: #1a25c1;
+  color: #fff;
+  padding: 20px 35px; /* Increased padding for larger buttons */
+  font-weight: bold;
+  margin: 10px 0; /* Adjust margin as needed */
+  border: none;
+  border-radius: 25px; /* Optional adjustment for visual balance */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 1.5rem; /* Increased font size for larger text */
+  align-self: flex-start; /* Align buttons to the left */
+}
+
+.button:hover {
+  background-color: #0f2ad7;
+  box-shadow: 0 5px 15px rgba(0, 128, 0, 0.3);
+  text-align: center;
+}
+
