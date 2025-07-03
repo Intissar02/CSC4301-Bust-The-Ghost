@@ -28,3 +28,15 @@ Conclusion:
 
 
 Demo: https://www.youtube.com/watch?v=r-Ss9ZwZlY0
+
+## Azure Pipeline Mapping
+
+| Pipeline Step       | What I Did                                                | Azure Equivalent              |
+|---------------------|-----------------------------------------------------------|-------------------------------|
+| Input & State Mgmt  | Captured user interaction and game state                  | Azure Logic Apps (event-driven trigger) |
+| Processing          | Applied Bayesian inference for probability updates        | Azure Databricks (rule-based logic)     |
+| Modeling/Decision   | Recalculated probabilities dynamically                    | DBT (calculated models/views)           |
+| Output              | Visual feedback and decision system (UI in React)         | Power BI / Web Frontend                 |
+| Automation          | Used Redux actions to trigger logic                       | Logic Apps / Function Apps              |
+| Versioning          | Stored and tracked with GitHub                            | Azure DevOps Git                        |
+
