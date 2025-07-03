@@ -27,7 +27,6 @@ Conclusion:
 "Bust the Ghost" showcases the application of Bayesian inference in gaming, creating a strategic and engaging experience. The use of advanced web development technologies like React and Redux ensures a responsive and interactive UI, while probabilistic modeling adds depth to the gameplay. 
 
 
-Demo: https://www.youtube.com/watch?v=r-Ss9ZwZlY0
 
 ## Azure Pipeline Mapping
 
